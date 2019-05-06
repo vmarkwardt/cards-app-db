@@ -1,0 +1,84 @@
+.input__radiobutton {
+  display: none;
+}
+
+.input__switch {
+  align-items: center;
+  background-color: $switch;
+  display: flex;
+  height: 54px;
+  justify-content: center;
+  position: relative;
+  width: 264px;
+  z-index: 1;
+}
+
+.input__radio-label {
+  align-items: center;
+  color: $radio;
+  display: inline-flex;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  width: 130px;
+  z-index: 3;
+}
+
+.input__radiobutton:checked + .input__radio-label {
+  background: $green-dark;
+  color: $grey;
+  transition-property: background, color;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-out;
+}
+
+.input__radio-slider {
+  background-color: $green-dark;
+  height: 50px;
+  left: 0;
+  margin: 2px;
+  position: absolute;
+  top: 0;
+  transition: left 0.5s ease;
+  width: 130px;
+  z-index: 2;
+}
+.input__radiobutton--on-right:checked ~ .input__radio-slider {
+  left: 130px;
+}
+
+.input__radiobutton:checked + .input__radio-label {
+  background-color: transparent;
+}
+
+.setting {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.setting__option {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.setting__option-label {
+  margin: 10px 0;
+  text-align: center;
+}
+.setting__option-label + [type="checkbox"] {
+  align-self: center;
+}
+
+@media screen and (min-width: 500px) {
+  .setting__option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 350px;
+    width: 70%;
+  }
+}

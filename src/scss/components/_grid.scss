@@ -1,0 +1,12 @@
+.body-grid {
+  display: grid;
+  grid-template-rows: 90px auto 58px; // header, scroll-area, footer
+  // 100vh is buggy on mobile browsers,
+  // so position fixed and following lines are needed
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

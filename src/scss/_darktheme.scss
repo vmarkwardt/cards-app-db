@@ -1,0 +1,78 @@
+body.darkmode {
+  background-color: $dark-grey;
+  color: $dark-black;
+  .header-heading {
+    background: $dark-green-light;
+  }
+
+  .header-title {
+    color: $dark-grey;
+  }
+
+  .footer-layout {
+    background-color: $dark-green-light;
+  }
+
+  .nav__button {
+    background-color: $dark-green-light;
+    color: $dark-black;
+  }
+
+  .card-bookmark {
+    background-color: $dark-bookmark;
+    &.active {
+      background: $bookmarklavender;
+    }
+    &::after {
+      content: "";
+      border: 12px solid $dark-bookmark;
+      border-bottom-color: transparent;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    &.active::after {
+      border-color: $bookmarklavender;
+      border-bottom-color: transparent;
+    }
+  }
+
+  .card-layout {
+    box-shadow: 8px 10px 16px 3px $dark-shadow-grey;
+  }
+
+  .card-heading,
+  .input__radio-slider,
+  li,
+  .input__radiobutton:checked + .input__radio-label {
+    color: $dark-grey;
+    background: $dark-green-dark;
+  }
+
+  .input__radio-label {
+    color: $dark-black;
+  }
+
+  .custom-checkbox:checked + .custom-checkbox-label::before {
+    background-color: $dark-grey;
+    color: $dark-black;
+  }
+
+  .form__button {
+    color: $dark-grey;
+    background: $dark-green-dark;
+    box-shadow: 8px 10px 16px 3px $dark-shadow-grey;
+  }
+
+  .fas {
+    color: $dark-grey;
+    &.active {
+      color: $dark-black;
+    }
+  }
+
+  .anchor__url {
+    color: $dark-black;
+  }
+}

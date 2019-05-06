@@ -1,0 +1,24 @@
+.custom-checkbox {
+  display: none;
+}
+
+.custom-checkbox-label::before {
+  content: "\2714";
+  background-color: $checkbox-white;
+  border: 1px solid $checkbox-border-white;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px $checkbox-shadow,
+    inset 0px -15px 10px -12px $checkbox-shadow;
+  color: $checkbox-white;
+  display: inline-block;
+  font-size: 10px;
+  font-size: 10px;
+  padding: 0px 4px;
+  padding: 0px 4px;
+  position: relative;
+  top: -2px;
+}
+
+.custom-checkbox:checked + .custom-checkbox-label::before {
+  background-color: $green-dark;
+}

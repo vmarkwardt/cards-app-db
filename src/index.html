@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <template class="form--template hidden">
+        <label class="marginb10" for="form-title">Title of new Card:</label>
+        <input
+          id="form-title"
+          type="text"
+          class="form__text-input marginb10"
+          name="title"
+        />
+        <label class="marginb10" for="form-desc"
+          >Description of new Card:</label
+        >
+        <textarea
+          name="description"
+          id="form-desc"
+          class="form__text-input marginb10 form__textarea"
+        ></textarea>
+        <input
+          type="checkbox"
+          name="card-bookmark-checkbox"
+          id="card-bookmark-checkbox"
+          class="form__checkbox custom-checkbox"
+        />
+        <label
+          for="card-bookmark-checkbox"
+          class="marginb10 custom-checkbox-label"
+        >
+          Bookmark this card</label
+        >
+        <button type="submit" class="form__button bordershape">
+          create card
+        </button>
+        <a href="#" id="help-link" class="anchor__url">Help</a>
+      </template>
+    </div>
+
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </body>
+</html>

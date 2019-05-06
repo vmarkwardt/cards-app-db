@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $grey;
+  color: $black;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.header-heading {
+  background: $green-light;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.header-title {
+  color: $grey;
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+.main__content {
+  padding: 20px;
+  overflow: scroll;
+}
+
+.footer-layout {
+  background: $green-light;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  padding: 5px 0;
+  right: 0;
+}
+
+.nav__button {
+  background: $green-light;
+  border: 0;
+}

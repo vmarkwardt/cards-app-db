@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.fas {
+  color: $grey;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+button.active {
+  color: $green-dark;
+}

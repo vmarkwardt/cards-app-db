@@ -1,0 +1,27 @@
+.profile {
+  display: flex;
+  font-size: 30px;
+}
+
+.profile__img {
+  border-radius: 50%;
+  height: 150px;
+  justify-self: left;
+  margin-left: 5px;
+  max-width: 150px;
+}
+
+.profile__user {
+  margin-left: 20px;
+  padding: 20px 0;
+}
+
+.profile__user--city {
+  font-size: 24px;
+}
+
+@media (min-width: 310px) {
+  .main__profile__box {
+    margin-left: 5px;
+  }
+}

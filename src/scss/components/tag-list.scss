@@ -1,0 +1,15 @@
+.tag-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: $green-dark;
+  color: $grey;
+  font-size: 14px;
+  margin: 5px;
+  list-style-type: none;
+  padding: 5px 10px 5px 10px;
+}

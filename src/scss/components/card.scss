@@ -1,0 +1,48 @@
+.card-layout {
+  border: 0;
+  border-radius: 10px 30px 5px 5px;
+  box-shadow: 8px 10px 16px 3px $shadow-grey;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 300px;
+  position: relative;
+}
+
+.card-heading {
+  color: $grey;
+  background: $green-dark;
+  padding: 10px;
+}
+
+.card-content {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.card-bookmark {
+  position: absolute;
+  background: $bookmark;
+  width: 24px;
+  height: 14px;
+  border: none;
+  right: 35px;
+  top: -10px;
+
+  &.active {
+    background: $bookmarklavender;
+  }
+
+  &::after {
+    content: "";
+    border: 12px solid $bookmark;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  &.active::after {
+    border-color: $bookmarklavender;
+    border-bottom-color: transparent;
+  }
+}
